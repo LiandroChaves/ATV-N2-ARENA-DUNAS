@@ -1,0 +1,173 @@
+.cadastroSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 48px;
+    width: 100%;
+    box-sizing: border-box;
+    gap: 48px;
+}
+
+.infoWrapper {
+    flex: 1;
+    max-width: 480px;
+}
+
+.subtituloVerde {
+    color: #236247;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    display: block;
+}
+
+.titulo {
+    color: #111827;
+    font-size: 32px;
+    font-weight: 700;
+    margin: 12px 0 16px;
+    line-height: 1.2;
+}
+
+.descricao {
+    color: #4B5563;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 24px;
+}
+
+.beneficios {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.beneficios li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #236247;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.checkIcon {
+    color: #236247;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.formCard {
+    flex: 1;
+    max-width: 440px;
+    background-color: #ffffff;
+    border: 1.5px solid #E5E7EB;
+    border-radius: 16px;
+    padding: 32px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+    box-sizing: border-box;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 18px;
+}
+
+.campo label {
+    font-size: 14px;
+    font-weight: 500;
+    color: #4B5563;
+}
+
+.campo input,
+.campo select {
+    padding: 10px 14px;
+    border: 1.5px solid #E5E7EB;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #111827;
+    outline: none;
+    background-color: #ffffff;
+    font-family: inherit;
+    transition: border-color 0.2s ease;
+}
+
+.campo input::placeholder {
+    color: #9CA3AF;
+}
+
+.campo input:focus,
+.campo select:focus {
+    border-color: #236247;
+}
+
+.btnEnviar {
+    background-color: #236247;
+    color: #ffffff;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 6px;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.btnEnviar:hover {
+    background-color: #1b4d38;
+}
+
+.btnEnviar:active {
+    transform: scale(0.98);
+}
+
+.msgSucesso {
+    background-color: #DEF7EC;
+    color: #03543F;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 14px;
+    margin-top: 14px;
+    text-align: center;
+    border: 1px solid #BCF0DA;
+}
+
+.msgErro {
+    background-color: #FDE8E8;
+    color: #9B1C1C;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 14px;
+    margin-top: 14px;
+    text-align: center;
+    border: 1px solid #FBD5D5;
+}
+
+@media (max-width: 850px) {
+    .cadastroSection {
+        flex-direction: column;
+        padding: 32px 20px;
+        gap: 32px;
+    }
+
+    .infoWrapper,
+    .formCard {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .titulo {
+        font-size: 26px;
+    }
+}

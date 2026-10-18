@@ -1,0 +1,29 @@
+.footer {
+    width: 100%;
+    border-top: 1px solid #ECECED;
+    padding: 24px 48px;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    margin-top: 24px;
+}
+
+.conteudo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    color: #6B7280;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .footer {
+        padding: 20px 20px;
+    }
+
+    .conteudo {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+}
