@@ -10,6 +10,7 @@ export default function Header({ logo }) {
             <div className={styles.headerContent}>
                 <img src={logo} alt="logo" className={styles.logo} />
                 <nav className={styles.navBar}>
+                    <a href="#sobre" className={styles.modalidades}>Sobre</a>
                     <a href="#modalidades" className={styles.modalidades}>Modalidades</a>
                     <a href="#cadastro">
                         <Button text="Quero participar" className={styles.btn}/>

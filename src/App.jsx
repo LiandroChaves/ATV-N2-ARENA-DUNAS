@@ -2,6 +2,7 @@ import React from 'react'
 import './App.css'
 import Header from './components/Header/Header'
 import Hero from './components/Hero/Hero'
+import Sobre from './components/Sobre/Sobre'
 import Modalidades from './components/Modalidades/Modalidades'
 import CadastroCliente from './components/CadastroClientes/CadastroCliente'
 import Footer from './components/Footer/Footer'
@@ -13,6 +14,7 @@ function App() {
       <Header logo={logo} />
       <main>
         <Hero />
+        <Sobre />
         <Modalidades />
         <CadastroCliente />
       </main>
